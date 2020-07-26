@@ -1,16 +1,15 @@
-def isPalindrome(num):
-    # if num<0:
-    #     return False
-    # string=str(num)
-    # length=len(string)
-    # if length%2 == 0 and num>0:
-
-    #     return length
- string=str(num)
- length=len(string)
- for element in string(range(0,length/2)):
-     print(element)   
-res = isPalindrome(23)
-print(res)
+def is_palindrome(s):
+    if len(s) < 1:
+        return True
+    else:
+        if s[0] == s[-1]:
+            return is_palindrome(s[1:-1])
+        else:
+            return False
+a=str(input("Enter string:"))
+if(is_palindrome(a)==True):
+    print("String is a palindrome!")
+else:
+    print("String isn't a palindrome!")
         #    python palindrome.py
         #    python palindrome.py
