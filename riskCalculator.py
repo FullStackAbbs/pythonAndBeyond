@@ -1,1 +1,1 @@
-xz
+def lotSizeCalc()
