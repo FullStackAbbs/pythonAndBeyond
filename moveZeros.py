@@ -1,8 +1,8 @@
- j = 0
+ f = 0
         for num in nums:
             if(num != 0):
-                nums[j] = num
-                j += 1
+                nums[f] = num
+                f += 1
 
-        for x in range(j, len(nums)):
+        for x in range(f, len(nums)):
             nums[x] = 0
